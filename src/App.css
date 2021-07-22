@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +17,20 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*GRID Movies*/
+
+.grid-movies {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 20px;
+}
+
+.grid-movies-item {
+  height: 300px;
+  border: 1px solid white;
+  border-radius: 5%;
 }
