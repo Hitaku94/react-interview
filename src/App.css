@@ -33,4 +33,145 @@
   height: 300px;
   border: 1px solid white;
   border-radius: 5%;
+  position: relative;
+}
+
+.grid-movies-item h4 {
+  font-weight: bold;
+}
+
+/* Like */
+
+.like-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.like-container-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.like-container-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+}
+
+.like-container-item div {
+  object-fit: cover;
+
+}
+
+.like-container-item img {
+  object-fit: fill;
+  height: 100%;
+  height: 100%;
+}
+
+/* button & category */
+
+.grid-movies-item p{
+  font-size: 20px;
+  background-color: rgba(143, 45, 45, 0.349);
+  display:inline-block;
+  padding: 1px 3px;
+}
+
+.remove-btn {
+ position: absolute;
+ background: none;
+ border: none;
+ top: -5px;
+ right: -7px;
+ padding: 0;
+ cursor: pointer;
+}
+
+.grid-movies-item button img {
+  width: 30px;
+}
+
+/* Search */
+
+.searchbar {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.searchbar input {
+  width : 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  
+}
+
+.searchbar input:focus {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.search-container {
+  width: 100%;
+}
+
+.searchCategory select {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.searchCategory select:focus {
+  outline: none;
+}
+
+.searchCategory button {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 5px;
+}
+
+/* Pagination */
+
+.pagination-container {
+  width: 30%;
+  margin: auto;
+  list-style:none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.pagination-container a {
+  cursor: pointer;
+  position: relative;
+}
+
+.pagination-container a::before {
+  content: "";
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.pagination-container a:hover::before {
+  transform-origin: 0 0;
+    transform: scaleX(1)
+}
+
+.pagination-active {
+  transform: scale(1.5);
+  color: rgba(255, 183, 183, 0.24);
 }

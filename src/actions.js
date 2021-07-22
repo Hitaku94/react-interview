@@ -5,8 +5,9 @@ export const increment = (number) => {
     };
 };
 
-export const decrement = () => {
+export const decrement = (number) => {
     return {
-        type: 'DECREMENT'
+        type: 'DECREMENT',
+        payload: number
     };
 };
